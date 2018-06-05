@@ -6,6 +6,8 @@ A simple python/Qt wrapper to launch JupterLab in a stand-alone window
 ## Requirements
 
 * pyqt 5.9+
+* jupyter 1.0.0+
+* notebook 5.5.0+
 * jupyterlab 0.32+
 
 
@@ -35,8 +37,6 @@ This window is independent of your default installed web browser.
 
 ### Caveats
 
-Closing the window does not automatically shut down the jupyter kernel server.
-You will need to do this manually in the terminal with keyboard interrupts (i.e. <kbd>ctrl+c</kbd>).
-
-This functionality is pending upcoming REST API changes to jupyter.
+The jupyter server started at launch is automatically terminated when the webview window is closed.
+This assumes only one jupyter application server is running at any given time.
 

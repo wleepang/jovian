@@ -6,6 +6,7 @@ window for local web apps
 
 import sys
 import argparse
+import subprocess
 
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtCore import QUrl
@@ -28,7 +29,12 @@ def main():
     browser.load(QUrl(args.url))
     browser.show()
 
-    sys.exit(app.exec_())
+    app.exec_()  # this will block until the window is closed
+    
+    # shutdown the server
+    subprocess.run(["jupyter", "notebook", "stop"])
+
+    sys.exit()
 
 
 if __name__ == "__main__":
