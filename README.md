@@ -40,3 +40,14 @@ This window is independent of your default installed web browser.
 The jupyter server started at launch is automatically terminated when the webview window is closed.
 This assumes only one jupyter application server is running at any given time.
 
+So far, this solution has only been thoroughly tested on macOS
+
+
+## Further Reading
+
+This work was inspired by the following:
+
+* http://christopherroach.com/articles/jupyterlab-desktop-app/
+* https://martinfitzpatrick.name/article/qtwebenginewidgets-pyqt5/
+* https://www.programcreek.com/python/example/97321/PyQt5.QtWebEngineWidgets.QWebEngineView
+
