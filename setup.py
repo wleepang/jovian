@@ -7,10 +7,6 @@ setup(
     author='W. Lee Pang',
     license='Apache-2',
     packages=find_packages(),
-#    install_requires=[
-#        'pyqt',
-#        'jupyterlab'
-#    ],
     scripts=[
         'bin/jovian',
         'jovian/jovian.py'

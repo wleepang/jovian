@@ -1,2 +1,6 @@
 pyqt>=5.9.0
+libsodium>=1.0.16
+zeromq>=4.2.5
+jupyter>=1.0.0
+notebook>=5.5.0
 jupyterlab>=0.32.0
